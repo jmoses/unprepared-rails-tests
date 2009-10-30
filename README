@@ -1,0 +1,3 @@
+Just put it in your lib/tasks directory, and you'll get [task]:nodb tasks for any task in the test namespace.
+
+It clears out all the prereq's on the task though, so if you have custom ones you'll lose them for the :nodb task.
