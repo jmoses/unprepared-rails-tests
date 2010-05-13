@@ -1,5 +1,7 @@
 # Rake.application.remove_task 'db:test:prepare'
 
+puts "BEING REQUIRED"
+
 test_tasks = Rake::Task.tasks.select {|t| t.comment && t.name =~ /^test/ }
 test_tasks.each do |test_task|
   namespace :test do
